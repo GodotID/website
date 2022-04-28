@@ -1,23 +1,21 @@
-# Hello World example
+# GodotID Community Website
+Terima kasih atas ketertarikan Anda terhadap website kami.
 
-This example shows the most basic idea behind Next. We have 2 pages: `pages/index.js` and `pages/about.js`. The former responds to `/` requests and the latter to `/about`. Using `next/link` you can add hyperlinks between them with universal routing capabilities. The `day` directory shows that you can have subdirectories.
+## Pengenalan Code Base
+Website GodotID memanfaatkan __framework__ Next.js.
 
-## Deploy your own
+## Cara Kontribusi
+Karena GodotID adalah komunitas, bukan perusahaan,
+maka kita saling hormat sesama kontributor.
+Jangan memaksakan kehendak, bertanya jika penasaran/tidak tahu,
+gunakan nilai-nilai sosial yang semestinya (__common sense__).
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/hello-world)
+> Kontribusi Anda sangat kami hargai dan apresiasi
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/hello-world&project-name=hello-world&repository-name=hello-world)
+### Panduan Bagi Teknisi Programmer
+Buka dokumen [CONTRIBUTION.md](CONTRIBUTION.md) untuk informasi lebih lanjut.
 
-## How to use
+### Panduan Bagi Orang Awam
+Silakan buka issue untuk berbagai pilihan menarik seperti __feature request__, __bug report__, dan __question__.
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example hello-world hello-world-app
-# or
-yarn create next-app --example hello-world hello-world-app
-# or
-pnpm create next-app -- --example hello-world hello-world-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+NB: `bug report` tidak diperuntukkan bagi Bug Hunter. Silakan email `hanz@godot.id` untuk melaporkan bug yang serius.
