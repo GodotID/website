@@ -1,12 +1,12 @@
 import Link from 'next/link'
 
+// Components
+import Page from '../components/Page'
+
 export default function IndexPage() {
-  return (
-    <div>
-      Hello World.{' '}
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </div>
-  )
+	return (
+		<Page title="GodotID">
+			<h1>GodotID</h1>
+		</Page>
+	)
 }
