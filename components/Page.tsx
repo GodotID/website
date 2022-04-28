@@ -6,16 +6,21 @@ import Head from 'next/head'
 import NavBar from './NavBar'
 import Footer from './Footer'
 
-export default function Page(props) {
+interface PageProps {
+	title?: String;
+	children: any;
+};
+
+export default function Page({ title = "", children }: PageProps) {
 	return (
 	<React.Fragment>
 		<Head>
-			<title>{props.title}</title>
+			<title>{title}</title>
 			<meta name="viewport" content="initial-scale=1.0, width=device-width" key="responsive" />
-			<meta property="og:title" content={props.title} key="title" />
+			<meta property="og:title" content={title} key="title" />
 		</Head>
 		<NavBar />
-		{props.children}
+		{children}
 		<Footer />
 	</React.Fragment>
 	);
