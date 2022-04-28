@@ -1,0 +1,28 @@
+$widthAmount: 10;
+
+.flex {
+	display: flex;
+
+	&[direction="0"] {
+		flex-direction: row;
+	}
+
+	&[direction="1"] {
+		flex-direction: column;
+	}
+
+	// Width
+	&[width="-2"] {
+		width: 100%;
+	}
+	
+	&[width="-1"] {
+		width: max-content;
+	}
+
+	@for $i from 1 through $widthAmount {
+		&[width="#{$i}"] {
+			flex: $i;
+		}
+	}
+}
