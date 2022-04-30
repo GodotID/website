@@ -13,20 +13,32 @@ enum FlexWidth {
 }
 
 interface FlexProps {
-	width?: FlexWidth | Number;
+	width?: FlexWidth | number;
 	direction?: FlexDirection;
-	children: any;
-	onClick?: Function;
+	children?: any;
+	onClick?: any;
+
+	spacebetween?: string;
+	verticalcenter?: string;
+	gap?: number;
+
+	className?: string[] | string;
 };
 
-export default function Flex({
-		width = FlexWidth.MaxContent, direction = FlexDirection.Row,
-		children, onClick
-	}: FlexProps
-) {
+const DefaultProps: FlexProps = {
+	width: FlexWidth.MaxContent,
+	direction: FlexDirection.Row,
+	className: []
+};
+
+export default function Flex(props: FlexProps) {
+	props = {...DefaultProps, ...props};
+
+	if (!Array.isArray(props.className)) props.className = [props.className];
+
 	return (
-		<flex onClick={onClick} className={style.flex} width={width} direction={direction}>
-			{children}
-		</flex>
+		<div {...props} className={[style.flex, ...props.className].join(" ")} >
+			{props.children}
+		</div>
 	)
 };

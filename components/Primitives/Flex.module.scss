@@ -1,3 +1,4 @@
+$gapInterval: 10px;
 $widthAmount: 10;
 
 .flex {
@@ -9,6 +10,16 @@ $widthAmount: 10;
 
 	&[direction="1"] {
 		flex-direction: column;
+	}
+
+	// Space Between
+	&[spacebetween=true] {
+		justify-content: space-between;
+	}
+
+	// Centers
+	&[verticalcenter=true] {
+		align-items: center;
 	}
 
 	// Width
@@ -23,6 +34,10 @@ $widthAmount: 10;
 	@for $i from 1 through $widthAmount {
 		&[width="#{$i}"] {
 			flex: $i;
+		}
+
+		&[gap="#{$i}"] {
+			gap: $gapInterval * $i;
 		}
 	}
 }
