@@ -7,8 +7,8 @@ import NavBar from './NavBar'
 import Footer from './Footer'
 
 interface PageProps {
-	title?: String;
-	children: any;
+	title?: string;
+	children?: any;
 };
 
 export default function Page({ title = "", children }: PageProps) {
