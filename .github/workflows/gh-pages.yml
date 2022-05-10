@@ -20,5 +20,6 @@ jobs:
           build_dir: out
           keep_history: true
           fqdn: godot.id # CNAME
+          jekyll: false # Solve website 404
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
