@@ -1,0 +1,17 @@
+name: Deploy GitHub Pages
+on: push
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Deploy to GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v2
+        with:
+          target_branch: gh-pages
+          build_dir: out
+          keep_history: true
+          fqdn: godot.id # CNAME
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
