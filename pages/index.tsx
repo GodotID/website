@@ -40,11 +40,12 @@ function EducationFocusedSection() {
 
 function VisiMisiSection() {
 	// TODO: [45] Change this inline style into something
-	// TODO: [46] Change <span> to something that could color text
-	return (
-		<Flex direction={1} style={{marginTop: '5em'}}>
+	// TODO: [47] Change <span> to something that could color text
+	return (<React.Fragment>
+		<div style={{marginTop: '5em'}}></div>
+		<Flex direction={1}>
 			<span><small><b>Education focused community</b></small></span>
-			<Flex gap="10">
+			<Flex gap={10}>
 				<div>
 					<h3>
 						Menggunakan game development<br/>
@@ -63,7 +64,7 @@ function VisiMisiSection() {
 				</div>
 			</Flex>
 		</Flex>
-	)
+	</React.Fragment>)
 }
 
 export default function IndexPage() {
