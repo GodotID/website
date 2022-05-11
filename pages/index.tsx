@@ -10,14 +10,14 @@ import Flex from '../components/Primitives/Flex'
 
 function EducationFocusedSection() {
 	return (
-		<Flex direction="1">
+		<Flex direction={1}>
 			<font color="red"><small><b>Education focused community</b></small></font>
 			<h2>
 				Game development<br/>
 				<font color="red">bukan hanya profit,</font><br/>
 				kami percaya itu.
 			</h2>
-			<Flex gap="5">
+			<Flex gap={5}>
 				<p>
 					Konsep game development untuk profit sangatlah<br/>
 					kuno, sistem pay-to-win didalam industri gaming<br/>
