@@ -11,10 +11,11 @@ import Flex from '../components/Primitives/Flex'
 function EducationFocusedSection() {
 	return (
 		<Flex direction={1}>
-			<font color="red"><small><b>Education focused community</b></small></font>
+			{/* Change <span> to something that could color text */}
+			<span><small><b>Education focused community</b></small></span>
 			<h2>
 				Game development<br/>
-				<font color="red">bukan hanya profit,</font><br/>
+				<span>bukan hanya profit,</span><br/>
 				kami percaya itu.
 			</h2>
 			<Flex gap={5}>
