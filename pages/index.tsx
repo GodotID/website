@@ -83,15 +83,15 @@ function KomunitasDefinitionSection() {
 				</h1>
 				<Flex gap={5}>
 					<Flex direction={1}>
-						<p small="">
+						<p className="small">
 							Komunitas bukanlah sebuah perusahaan, berbeda sekali.
 						</p>
-						<p small="">
+						<p className="small">
 							Komunitas adalah sekumpulan individu yang membuat
 							ekosistem yang berkelanjutan, terus berputar dan
 							menebar manfaat. Saling membantu satu sama lain.
 						</p>
-						<p small="">
+						<p className="small">
 							Apakah ada pemimpinnya?<br/>
 							Jelas pasti ada.
 						</p>
