@@ -7,3 +7,7 @@ body {
 p {
 	max-width: 80ch;
 }
+
+p[small] {
+	max-width: 40ch;
+}
