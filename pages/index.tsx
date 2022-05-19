@@ -44,7 +44,7 @@ function VisiMisiSection() {
 	return (<React.Fragment>
 		<div style={{marginTop: '5em'}}></div>
 		<Flex direction={1}>
-			<span><small><b>Education focused community</b></small></span>
+			<span><small><b>Visi dan misi terbentuknya GodotID</b></small></span>
 			<Flex gap={10}>
 				<div>
 					<h3>
