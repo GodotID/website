@@ -131,3 +131,6 @@ dist
 
 # Nano backups
 *~
+
+# Prevent my necovim config being pusing to github
+.necovim/
