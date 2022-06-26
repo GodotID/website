@@ -13,6 +13,7 @@ import {
 } from '@chakra-ui/react'
 
 export default function Hero() {
+    // TODO: need to add hero gradient background colors , suggested to add on parent components
     return (
         <Flex minH={"100vh"} mb={15} pt={15} flexDirection={"column"}>
             <HStack justifyContent="space-between" pt={32}>
