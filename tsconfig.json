@@ -22,7 +22,8 @@
     "paths": {
         "@components/*" : ["./components/*"],
         "@pages/*": ["./pages/*"],
-        "@sections/*": ["./components/sections/*"]
+        "@sections/*": ["./components/sections/*"],
+        "@utils/*": ["./utils/*"]
     }
   },
   "include": [
