@@ -23,7 +23,7 @@ interface FlexProps {
 	gap?: number;
 
 	className?: string[] | string;
-};
+}
 
 const DefaultProps: FlexProps = {
 	width: FlexWidth.MaxContent,
@@ -41,4 +41,4 @@ export default function Flex(props: FlexProps) {
 			{props.children}
 		</div>
 	)
-};
+}
