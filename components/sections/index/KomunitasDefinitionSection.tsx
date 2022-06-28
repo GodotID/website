@@ -31,12 +31,12 @@ export default function KomunitasDefinitionSection() {
                         </p>
                     </Flex>
                     <h2><i>
-                        "Founder dan Co-Founder<br />
+                    &quot;Founder dan Co-Founder<br />
                         bukanlah orang yang<br />
                         membuat komunitas,<br />
                         tapi mereka hanyalah salah satu<br />
                         dari banyak orang yang<br />
-                        menemukannya."
+                        menemukannya.&quot;
                     </i></h2>
                 </Flex>
             </Flex>

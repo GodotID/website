@@ -8,7 +8,7 @@ import Link from './Primitives/Link'
 // Styles
 import style from './Hero.module.scss'
 
-export default function(props) {
+const Hero = (props) => {
 	return (
 		<Flex className={style.Hero}>
 			<Flex direction={1} width={1}>
@@ -28,3 +28,6 @@ export default function(props) {
 		</Flex>
 	);
 }
+
+
+export default Hero
