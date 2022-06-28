@@ -11,3 +11,17 @@ p {
 p.small {
 	max-width: 40ch;
 }
+
+
+.redirector{
+	border: 5px ridge black;
+	padding: 10px;
+	text-transform: capitalize;
+	font-size: 5rem;
+	font-weight: bold;
+	color: red;
+	text-align: center;
+	margin: auto;
+	width: fit-content;
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
