@@ -9,7 +9,7 @@ import Footer from './Footer'
 interface PageProps {
 	title?: string;
 	children?: any;
-};
+}
 
 export default function Page({ title = "", children }: PageProps) {
 	return (

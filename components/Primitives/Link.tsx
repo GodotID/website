@@ -15,4 +15,4 @@ export default function Link(props: any) {
 			</a>
 		</NextLink>
 	);
-};
+}
