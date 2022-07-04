@@ -2,7 +2,7 @@ name: Lint and Build
 on: pull_request
 
 jobs:
-  publish:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
