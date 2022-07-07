@@ -15,7 +15,7 @@ export default function NavBar() {
 			<Flex gap={4}>
 				<Link href="/">Home</Link>
 				<Link href="/gallery">Gallery</Link>
-				<Link href="/jams">Game Jams</Link>
+				<Link href="/redirect?to=https://itch.io/jams/hosted-by-hanzhaxors">Game Jams</Link>
 				<Link href="/budget">Budget</Link>
 				<Link href="/team">Contributors</Link>
 			</Flex>
