@@ -6,7 +6,9 @@ export default function Redirect() {
     const route = useRouter();
     const { to  } = route.query
     React.useEffect(()=>{
-        return window.location.assign(to.toString())
+        // check if to parameters not exist
+        if(typeof to != 'undefined') return window.location.assign(to.toString())
+        return window.location.assign("/")
     })
     return (
         <>

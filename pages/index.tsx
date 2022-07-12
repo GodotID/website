@@ -1,18 +1,16 @@
 // Modules
 import React from 'react'
+import dynamic from 'next/dynamic';
 
-// Components
-import Page from '@components/Page'
-import Hero from '@components/Hero'
 // Components Section
 import EducationFocusedSection from '@sections/index/EducationFocusedSection';
 import VisiMisiSection from '@sections/index/VisiMisiSection';
 import KomunitasDefinitionSection from '@sections/index/KomunitasDefinitionSection';
 
-
-
-
 export default function IndexPage() {
+    // use dynamic to suppressed hydration error waning because it's client side rendering
+    const Page = dynamic(() => import('@components/Page'));
+    const Hero = dynamic(() => import('@components/Hero'));
     return (
         <Page title="GodotID">
             <Hero />
