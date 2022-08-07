@@ -27,3 +27,21 @@ article.hero {
 		}
 	}
 }
+
+article.narative {
+	padding: 0 10vw;
+
+	> h2 {
+		width: 20ch;
+	}
+
+	> div.columns {
+		display: flex;
+		gap: 30px;
+
+		> p {
+			width: 50ch;
+			text-align: justify;
+		}
+	}
+}
