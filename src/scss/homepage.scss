@@ -11,3 +11,19 @@ nav {
 		gap: 30px;
 	}
 }
+
+article.hero {
+	display: flex;
+
+	padding: 10vw;
+
+	> div {
+		&.left {
+			flex: 1;
+		}
+
+		&.right {
+			flex: 2;
+		}
+	}
+}
