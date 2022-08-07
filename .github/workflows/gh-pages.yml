@@ -21,7 +21,7 @@ jobs:
         uses: crazy-max/ghaction-github-pages@v2
         with:
           target_branch: gh-pages
-          build_dir: out
+          build_dir: dist
           keep_history: true
           fqdn: godot.id # CNAME
           jekyll: false # Solve website 404
