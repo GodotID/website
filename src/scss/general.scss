@@ -1,3 +1,6 @@
+/* Variables */
+$primary: #000000;
+
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:wght@400;700&family=Ubuntu:wght@400;500;700&display=swap');
 
@@ -14,4 +17,20 @@ body {
 	margin: 0;
 	outline: 0;
 	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: $primary;
+
+	opacity: 0.8;
+
+	&:hover {
+		text-decoration: underline;
+		opacity: 1;
+	}
+
+	p > & {
+		text-decoration: underline dotted;
+	}
 }
