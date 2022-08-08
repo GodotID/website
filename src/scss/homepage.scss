@@ -1,5 +1,9 @@
+@import "color";
+
 nav {
 	display: flex;
+	background: $primary;
+	color: $secondary;
 
 	padding: 0 10vw;
 
@@ -8,7 +12,12 @@ nav {
 
 	> div.links {
 		display: flex;
+
 		gap: 30px;
+
+		& > a {
+			color: $secondary;
+		}
 	}
 }
 
