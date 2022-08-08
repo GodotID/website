@@ -11,6 +11,13 @@ body, p, b {
 	font-family: Roboto, Inter, Arial, sans-serif;
 }
 
+p, b, i, span {
+	color: $text;
+
+	&.primary { color: $primary; }
+	&.secondary { color: $secondary; }
+}
+
 /* Global CSS */
 body {
 	margin: 0;
