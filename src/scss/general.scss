@@ -1,3 +1,15 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:wght@400;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Inter, Ubuntu, Arial, sans-serif;
+}
+
+body, p, b {
+	font-family: Roboto, Inter, Arial, sans-serif;
+}
+
+/* Global CSS */
 body {
 	margin: 0;
 	outline: 0;
