@@ -8,5 +8,9 @@ div.class#id {
 	/* Positioning; properties that changes the element's position or rotation */
 
 	/* Misc; box-sizing, box-shadow, filter */
+
+	/* Nested SCSS; Effects; psuedo selector; :hover, :active, :target, etc. */
+
+	/* Nested SCSS; Child elements and/or parent elements */
 }
 ```
