@@ -39,7 +39,7 @@ article.narative {
 		display: flex;
 		gap: 30px;
 
-		> p {
+		> * {
 			width: 50ch;
 			text-align: justify;
 		}
