@@ -56,3 +56,13 @@ article.narative {
 		}
 	}
 }
+
+footer {
+	padding: 0 10vw;
+	margin-top: 10vw;
+
+	> p.disclaimer {
+		text-align: center;
+		opacity: 0.8;
+	}
+}
