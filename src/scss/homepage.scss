@@ -23,7 +23,7 @@ nav {
 			display: none;
 		}
 
-		&:active {
+		&:target {
 			@media screen and (max-width: 660px) {
 				position: fixed;
 				right: 0;
