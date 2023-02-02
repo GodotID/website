@@ -37,6 +37,10 @@ article.hero {
 			flex: 1;
 		}
 	}
+
+	@media screen and (max-width: 660px) {
+		flex-direction: column-reverse;
+	}
 }
 
 article.narative {
