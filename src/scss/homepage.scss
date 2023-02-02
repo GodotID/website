@@ -48,6 +48,11 @@ nav {
 			}
 		}
 	}
+
+	& > a.mobile-only.open {
+		padding: 10px 20px;
+		color: $secondary;
+	}
 }
 
 article.hero {
