@@ -49,3 +49,12 @@ a {
 		text-decoration: underline dotted;
 	}
 }
+
+/* Responsive Display */
+.mobile-only {
+	display: none;
+	
+	@media screen and (max-width: 600px) {
+		display: block;
+	}
+}
