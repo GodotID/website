@@ -19,6 +19,10 @@ nav {
 			color: $secondary;
 		}
 
+		@media screen and (max-width: 660px) {
+			display: none;
+		}
+
 		&:active {
 			@media screen and (max-width: 660px) {
 				position: fixed;
