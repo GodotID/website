@@ -18,6 +18,30 @@ nav {
 		& > a {
 			color: $secondary;
 		}
+
+		&:active {
+			@media screen and (max-width: 660px) {
+				position: fixed;
+				right: 0;
+				top: 0;
+
+				width: 100%;
+				height: 100%;
+
+				flex-direction: column;
+				text-align: center;
+				justify-content: center;
+
+				background: black;
+
+				& > .close {
+					position: fixed;
+					right: 0;
+					top: 0;
+					padding: 10px;
+				}
+			}
+		}
 	}
 }
 
