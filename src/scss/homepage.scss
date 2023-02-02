@@ -57,6 +57,10 @@ article.narative {
 		> * {
 			width: 50ch;
 		}
+
+		@media screen and (max-width: 660px) {
+			flex-direction: column;
+		}
 	}
 
 	ul {
