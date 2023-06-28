@@ -1,9 +1,9 @@
 import { useReducer, useState } from 'react';
 
-const App = () => {
+const Homepage = () => {
 	return (
 		<div></div>
 	);
 };
 
-export default App;
+export default Homepage;
