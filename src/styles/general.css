@@ -16,6 +16,15 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: revert;
 }
 
+button {
+	border: 0;
+	padding: 0.4em 0.7em;
+	font-weight: normal;
+	border-radius: var(--border-radius-second);
+	margin: 0;
+	cursor: pointer;
+}
+
 #root {
 	height: 100%;
 
@@ -23,4 +32,5 @@ h1, h2, h3, h4, h5, h6 {
 	--primary-text: #ffffff;
 
 	--border-soft: #f4f4f4;
+	--border-radius-second: 5px;
 }

@@ -14,8 +14,12 @@ const NavBar = () => {
 				<h3>Godot Indonesia</h3>
 				<div className="navbar__linksWrapper">
 					<a href="#">Profil</a>
-					<a href="#">Kompetisi</a>
+					<a href="https://itch.io/jams/hosted-by-hanzceo">Kompetisi</a>
 					<a href="#">Galeri</a>
+
+					<button onClick={() => window.open("https://t.me/godot_indonesia", "_blank")}>
+						Gabung
+					</button>
 				</div>
 			</div>
 		</div>
