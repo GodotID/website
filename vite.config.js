@@ -9,10 +9,7 @@ export default defineConfig({
 	plugins: [react()],
 	resolve: {
 		alias: {
-			utils: join(__dirname, 'src', 'utils'),
 			components: join(__dirname, 'src', 'components'),
-			"app.context": join(__dirname, 'src', 'app.context'),
-			"app.reducer": join(__dirname, 'src', 'app.reducer'),
 			misc: join(__dirname, 'src', 'misc'),
 			styles: join(__dirname, 'src', 'styles')
 		}
