@@ -1,10 +1,11 @@
-import { useReducer, useState } from 'react';
+import { useRef, useState } from 'react';
 
 import 'styles/homepage.css'
 
 import NavBar from 'components/NavBar'
 import Sidebar from 'components/Sidebar'
 import Hero from 'components/Hero'
+import Visi from 'components/Visi'
 
 const Homepage = () => {
 	return (
@@ -14,6 +15,7 @@ const Homepage = () => {
 				<Sidebar />
 				<div className="homepage__main">
 					<Hero />
+					<Visi />
 				</div>
 			</div>
 		</div>
