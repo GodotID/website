@@ -1,0 +1,30 @@
+.hero__hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2em;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+}
+
+.hero__hero > * {
+	margin: 0;
+}
+
+.hero__hero > p {
+	color: var(--primary-text);
+}
+
+.hero__headline {
+	background-image: radial-gradient(
+		230.88% 96.39% at 19.17% 21.57%,
+		rgba(234, 193, 48, 1) 0,
+		rgba(205, 163, 13, 1) 100%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 700;
+	font-size: 3rem;
+}

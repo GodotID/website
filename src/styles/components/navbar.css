@@ -1,0 +1,46 @@
+.navbar__navbar {
+	width: 100%;
+	border: 1px solid var(--border-soft);
+	border-left: none;
+
+	display: flex;
+	position: absolute;
+}
+
+.navbar__logoWrapper {
+	min-width: 80px;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-left: 1px solid var(--border-soft);
+	border-right: 1px solid var(--border-soft);
+}
+
+.navbar__logoWrapper > svg {
+	width: 40px;
+	height: 40px;
+}
+
+.navbar__spaceWrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: 0.4em 1em;
+	color: var(--primary-text);
+}
+
+.navbar__linksWrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navbar__linksWrapper > a {
+	color: var(--primary-text);
+	text-decoration: none;
+	font-size: 0.8em;
+	padding: 0 1em;
+	height: 100%;
+}
