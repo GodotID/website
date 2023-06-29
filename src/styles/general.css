@@ -31,6 +31,11 @@ button {
 
 
 	--primary-text: #ffffff;
+	--primary-header-text: radial-gradient(
+		230.88% 96.39% at 19.17% 21.57%,
+		rgba(234, 193, 48, 1) 0,
+		rgba(205, 163, 13, 1) 100%
+	);
 
 	--border-soft: #f4f4f4;
 	--border-radius-second: 5px;
