@@ -8,7 +8,7 @@ const NavBar = () => {
 	return (
 		<div className="navbar__navbar">
 			<div className="navbar__logoWrapper">
-				<GodotIDLogo />
+				<GodotIDLogo style={{ fill: "var(--primary-text)" }} />
 			</div>
 			<div className="navbar__spaceWrapper">
 				<h3>Godot Indonesia</h3>
