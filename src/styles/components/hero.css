@@ -1,4 +1,5 @@
 .hero__hero {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -27,4 +28,21 @@
 	-webkit-text-fill-color: transparent;
 	font-weight: 700;
 	font-size: 3rem;
+}
+
+.hero__disclaimer {
+	font-size: 0.8em;
+	display: block;
+	position: absolute;
+	opacity: 0.5;
+	bottom: 10%;
+}
+
+.hero__disclaimer a {
+	color: var(--primary-text);
+	text-decoration: underline dotted;
+}
+
+.hero__disclaimer a:hover {
+	text-decoration: underline;
 }
