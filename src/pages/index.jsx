@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react';
+import PageScroll from 'react-page-scroll'
 
 import 'styles/homepage.css'
 
@@ -13,10 +14,10 @@ const Homepage = () => {
 			<NavBar />
 			<div className="homepage__content">
 				<Sidebar />
-				<div className="homepage__main">
+				<PageScroll className="homepage__main">
 					<Hero />
 					<Visi />
-				</div>
+				</PageScroll>
 			</div>
 		</div>
 	);
