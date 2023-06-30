@@ -2,16 +2,32 @@ import { useState } from 'react';
 
 import 'styles/components/hero.css'
 
-const styles = {};
+const styles = {
+	main: {
+		padding: "15% 6em",
+		height: "100vh"
+	},
+	header: {
+		backgroundImage: "var(--primary-header-text)",
+		fontWeight: 700,
+		fontSize: "10rem",
+		margin: 0,
+		WebkitBackgroundClip: "text",
+		WebkitTextFillColor: "transparent"
+	},
+	text: {
+		color: "var(--primary-text)"
+	}
+};
 
 const Hero = () => {
 	return (
-		<div>
-			<h2>
+		<div style={styles.main}>
+			<h2 style={styles.header}>
 				Visi
 			</h2>
-			<p>
-				Menjadi pintu masuk dunia perangkat
+			<p style={styles.text}>
+				Menjadi pintu masuk dunia perangkat<br/>
 				lunak (khususnya pemrograman) bagi masyarakat awam. 
 			</p>
 		</div>
