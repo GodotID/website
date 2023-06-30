@@ -45,3 +45,9 @@
 	padding: 0 1em;
 	height: 100%;
 }
+
+@media screen and (max-width: 660px) {
+	.navbar__linksWrapper {
+		display: none;
+	}
+}

@@ -23,3 +23,9 @@
 	border-right: 1px solid var(--border-soft);
 	border-bottom: 1px solid var(--border-soft);
 }
+
+@media screen and (max-width: 660px) {
+	.homepage__content {
+		border-left: 1px solid var(--border-soft);
+	}
+}

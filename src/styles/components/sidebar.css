@@ -49,3 +49,9 @@
 	from { transform: translateY(0px); }
 	to { transform: translateY(2px); }
 }
+
+@media screen and (max-width: 660px) {
+	.sidebar__wrapper {
+		display: none;
+	}
+}

@@ -46,3 +46,15 @@
 .hero__disclaimer a:hover {
 	text-decoration: underline;
 }
+
+@media screen and (max-width: 660px) {
+	.hero__hero {
+		text-align: left;
+		padding: 30% 1em;
+		justify-content: left;
+	}
+
+	.hero__disclaimer {
+		padding: 0 2em;
+	}
+}
