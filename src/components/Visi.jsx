@@ -27,8 +27,10 @@ const Hero = () => {
 				Visi
 			</h2>
 			<p style={styles.text}>
-				Menjadi pintu masuk dunia perangkat<br/>
-				lunak (khususnya pemrograman) bagi masyarakat awam. 
+				{/* TODO: Fiksasi visi komunitas */}
+				Menjadi pembimbing budaya penggunaan dan pembuatan<br />
+				media hiburan virtual bagi generasi muda Indonesia<br />
+				khususnya untuk perangkat lunak 'Godot Engine'.
 			</p>
 		</div>
 	);
