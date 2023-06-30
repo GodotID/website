@@ -6,6 +6,7 @@
 	height: 100%;
 	border: 1px solid var(--border-soft);
 	border-top: none;
+	border-bottom: none;
 
 	min-width: 80px;
 }
