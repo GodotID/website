@@ -7,13 +7,14 @@ import NavBar from 'components/NavBar'
 import Sidebar from 'components/Sidebar'
 import Hero from 'components/Hero'
 import Visi from 'components/Visi'
+import Misi from 'components/Misi'
 
 const Homepage = () => {
 	let [progress, setProgress] = useState("0%");
 	function handleScroll({ targetIndex }) {
 		// Excluding <Hero />
 		// TODO: Algorithmically get sectionCount
-		const sectionCount = 1;
+		const sectionCount = 2;
 
 		setProgress(Math.ceil(targetIndex/sectionCount*100) + '%');
 	}
@@ -26,6 +27,7 @@ const Homepage = () => {
 				<PageScroll className="homepage__main" onScrollStart={handleScroll}>
 					<Hero />
 					<Visi />
+					<Misi />
 				</PageScroll>
 			</div>
 		</div>
