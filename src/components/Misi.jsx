@@ -27,10 +27,13 @@ const Hero = () => {
 				Misi
 			</h2>
 			<ul style={styles.text}>
-				<li>Memfasilitasi platform dan framework pembelajaran tanpa syarat usia.</li>
-				<li>Membuat acara dengan target audiens pecandu game, dengan upaya terapi.</li>
-				<li>Mendirikan ekosistem komunitas yang berkelanjutan dengan tidak bergantung pada donasi.</li>
-				<li>Memfasilitasi adanya program magang dan sukarelawan.</li>
+				<li>
+					<b>Generasi muda proaktif</b>
+					<p>
+						Pengadaan peran dan peluang bagi generasi muda Indonesia<br/>
+						melalui program perlombaan dan sukarelawan.
+					</p>
+				</li>
 			</ul>
 		</div>
 	);
