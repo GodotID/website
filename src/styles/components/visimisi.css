@@ -15,3 +15,9 @@
 .visimisi__text {
 	color: var(--primary-text);
 }
+
+@media screen and (max-width: 660px) {
+	.visimisi__main {
+		padding: 20% 1em;
+	}
+}
