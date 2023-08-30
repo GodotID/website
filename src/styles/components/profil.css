@@ -1,0 +1,39 @@
+.profil__main {
+	padding: 15% 6em;
+	height: 100vh;
+	display: flex;
+	gap: 10rem;
+}
+
+.profil__left {
+	flex: 2;
+}
+
+.profil__header {
+	background-image: var(--primary-header-text);
+	font-weight: 700;
+	font-size: 3rem;
+	margin: 0;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.profil__text {
+	color: var(--primary-text);
+}
+
+.profil_right {
+	flex: 1;
+}
+
+.profil__right__image {
+	border-radius: var(--border-radius-second);
+}
+
+@media screen and (max-width: 660px) {
+	.profil__main {
+		padding: 20% 1em;
+		gap: 0;
+		flex-direction: column;
+	}
+}

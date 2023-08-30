@@ -13,7 +13,7 @@ const NavBar = () => {
 			<div className="navbar__spaceWrapper">
 				<h3>Godot Indonesia</h3>
 				<div className="navbar__linksWrapper">
-					<a href="#">Profil</a>
+					<a href="#profil">Profil</a>
 					<a href="https://itch.io/jams/hosted-by-hanzceo">Kompetisi</a>
 					<a href="#">Galeri</a>
 
