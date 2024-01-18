@@ -4,9 +4,11 @@ import 'styles/components/navbar.css'
 
 import { ReactComponent as GodotIDLogo } from 'misc/imgs/logo.svg'
 
-const NavBar = () => {
+const NavBar = ({ color }) => {
+    if (!color) color = 'primary';
+
 	return (
-		<div className="navbar__navbar">
+		<div className={["navbar__navbar", color].join(' ')}>
 			<div className="navbar__logoWrapper">
 				<GodotIDLogo style={{ fill: "var(--primary-text)" }} />
 			</div>

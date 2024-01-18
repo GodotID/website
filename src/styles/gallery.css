@@ -1,11 +1,3 @@
-.navbar__navbar h3, .navbar__navbar p, .navbar__navbar a{
-    color: var(--secondary-text) !important;
-}
-
-.navbar__logoWrapper {
-    --primary-text: var(--secondary-text);
-}
-
 .gallery__hero {
     width: 100%;
     background: var(--primary-text);
@@ -13,7 +5,7 @@
     padding-top: calc(10em + 82px); /* +navbar height */
     padding-bottom: 8em;
     border-bottom: 1px solid var(--border-soft);
-    box-shadow: 0 4px 5px 0 var(--border-soft);
+    box-shadow: 0 4px 10px 0 var(--border-soft);
 }
 
 .gallery__hero > h1 {

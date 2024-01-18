@@ -19,7 +19,7 @@ function GalleryItem({ imgsrc, title, desc }) {
 function Gallery() {
     return (
         <div className='gallery__gallery'>
-            <NavBar />
+            <NavBar color='secondary'/>
             <div className='gallery__content'>
                 <div className='gallery__hero'>
                     <h1>Galeri Komunitas</h1>
