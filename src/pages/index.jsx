@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react';
 import PageScroll from 'react-page-scroll'
+import { redirect } from 'react-router-dom'
 
 import 'styles/homepage.css'
 
@@ -27,7 +28,12 @@ const Homepage = () => {
 		scrollTo = scrollControl.scrollTo.bind(scrollControl);
 
 		if (window.location.hash.substr(1)) {
-			scrollTo(hashes.indexOf(window.location.hash.substr(1)));
+            let hashval = window.location.hash.substr(1);
+            if (hashval[0] == '/') {
+                redirect(hashval);
+            } else {
+			    scrollTo(hashes.indexOf(window.location.hash.substr(1)));
+            }
 		}
 
 		window.addEventListener('hashchange', () => {
