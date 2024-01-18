@@ -32,6 +32,7 @@ button {
 
 	--primary-text: #ffffff;
 	--secondary-text: #218A2B;
+    --dim-paragraph: #8a8a8a;
 	--primary-header-text: radial-gradient(
 		230.88% 96.39% at 19.17% 21.57%,
 		rgba(234, 193, 48, 1) 0,

@@ -15,7 +15,7 @@ const NavBar = () => {
 				<div className="navbar__linksWrapper">
 					<a href="#profil">Profil</a>
 					<a href="https://itch.io/jams/hosted-by-hanzceo">Kompetisi</a>
-					<a href="#">Galeri</a>
+					<a href="/gallery">Galeri</a>
 
 					<button onClick={() => window.open("https://t.me/godot_indonesia", "_blank")}>
 						Gabung
