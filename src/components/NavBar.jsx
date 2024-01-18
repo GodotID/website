@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom'
 
 import 'styles/components/navbar.css'
 
@@ -17,7 +18,7 @@ const NavBar = ({ color }) => {
 				<div className="navbar__linksWrapper">
 					<a href="#profil">Profil</a>
 					<a href="https://itch.io/jams/hosted-by-hanzceo">Kompetisi</a>
-					<a href="/gallery">Galeri</a>
+					<Link to="/gallery">Galeri</Link>
 
 					<button onClick={() => window.open("https://t.me/godot_indonesia", "_blank")}>
 						Gabung
