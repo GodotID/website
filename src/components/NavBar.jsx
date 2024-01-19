@@ -25,7 +25,7 @@ const NavBar = ({ color }) => {
                     <div className='navbar__mobile navbar__mobile__close'>
                         <X onClick={() => setClose('navbar__closed')} />
                     </div>
-					<a href="#profil">Profil</a>
+					<a href="#?content=profil">Profil</a>
 					<a href="https://itch.io/jams/hosted-by-hanzceo">Kompetisi</a>
 					<Link to="/gallery">Galeri</Link>
 

@@ -23,22 +23,26 @@ const Homepage = () => {
 		setProgress(Math.ceil(targetIndex/sectionCount*100) + '%');
 	}
 
+    function handleHashes() {
+        let hashval = window.location.hash.substr(1);
+        let searchArray = [...hashval.split('?'), ''][1].split('&').map(x => x.split('=', 2));
+        let search = {};
+        for (let s of searchArray) {
+            search[s[0]] = s[1];
+        }
+        console.log(search)
+        if (!search['content']) search['content'] = 'hero';
+        scrollTo(hashes.indexOf(search['content']));
+    }
 	let scrollTo = undefined;
 	function handleScrollInit({ scrollControl }) {
 		scrollTo = scrollControl.scrollTo.bind(scrollControl);
 
 		if (window.location.hash.substr(1)) {
-            let hashval = window.location.hash.substr(1);
-            if (hashval[0] == '/') {
-                redirect(hashval);
-            } else {
-			    scrollTo(hashes.indexOf(window.location.hash.substr(1)));
-            }
+            handleHashes();
 		}
 
-		window.addEventListener('hashchange', () => {
-			scrollTo(hashes.indexOf(window.location.hash.substr(1)));
-		});
+		window.addEventListener('hashchange', handleHashes);
 	}
 
 	return (
