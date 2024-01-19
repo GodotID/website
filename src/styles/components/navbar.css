@@ -67,6 +67,10 @@
         padding: 1rem;
 	}
 
+    .navbar__linksWrapper.secondary {
+        background: var(--primary-text);
+    }
+
     .navbar__mobile {
         display: block;
         color: var(--primary-text);
