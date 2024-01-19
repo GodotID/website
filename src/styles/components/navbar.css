@@ -53,5 +53,40 @@
 @media screen and (max-width: 660px) {
 	.navbar__linksWrapper {
 		display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        background: var(--secondary-text);
+        padding: 1rem;
 	}
+
+    .navbar__mobile {
+        display: block;
+        color: var(--primary-text);
+    }
+
+    .navbar__linksWrapper:not(.navbar__closed) {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+
+    .navbar__linksWrapper > * {
+        height: min-content !important;
+        padding: 1rem 1rem;
+        width: 100%;
+    }
+
+    .navbar__mobile__close {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .navbar__closed {
+        display: none;
+    }
 }
