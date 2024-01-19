@@ -67,8 +67,8 @@
         padding: 1rem;
 	}
 
-    .navbar__linksWrapper.secondary {
-        background: var(--primary-text);
+    .navbar__navbar.secondary .navbar__linksWrapper {
+        background: var(--primary-text2);
     }
 
     .navbar__mobile {
