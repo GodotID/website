@@ -13,11 +13,11 @@ const NavBar = ({ color }) => {
 
 	return (
 		<div className={["navbar__navbar", color].join(' ')}>
-			<div className="navbar__logoWrapper">
+			<div className="navbar__logoWrapper" onClick={() => location.hash = ''}>
 				<GodotIDLogo style={{ fill: "var(--primary-text)" }} />
 			</div>
 			<div className="navbar__spaceWrapper">
-				<h3>Godot Indonesia</h3>
+				<h3 onClick={() => location.hash = ''}>Godot Indonesia</h3>
                 <div className="navbar__mobile">
                     <Menu onClick={() => setClose('')}/>
                 </div>
