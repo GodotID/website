@@ -20,6 +20,7 @@
 }
 
 .gallery__masonry {
+    padding: 0 2rem;
     padding-top: 5rem;
     list-style: none;
     columns: 19rem;
