@@ -29,4 +29,12 @@
 	.visimisi__main {
 		padding: 7rem 1em;
 	}
+
+    .visimisi__main#misi {
+        display: block;
+    }
+
+    .visimisi__main#misi > * {
+        width: 100%;
+    }
 }
