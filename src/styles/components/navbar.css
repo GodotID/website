@@ -72,7 +72,7 @@
         height: 100%;
         z-index: 2;
         background: var(--secondary-text);
-        padding: 1rem;
+        padding: 0 1rem;
 	}
 
     .navbar__navbar.secondary .navbar__linksWrapper {
@@ -88,13 +88,21 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        gap: 1rem;
     }
 
     .navbar__linksWrapper > * {
         height: min-content !important;
-        padding: 1rem 1rem;
+        padding: 1rem 0;
         width: 100%;
+    }
+
+    .navbar__linksWrapper > a {
+        padding: 1rem 0;
+    }
+
+    .navbar__linksWrapper > button {
+        margin: 0;
+        margin-top: 1rem;
     }
 
     .navbar__mobile__close {
