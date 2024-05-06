@@ -1,8 +1,7 @@
 .profil__main {
-	padding: 15% 6em;
-	height: 100vh;
+	padding: 5rem 12rem;
 	display: flex;
-	gap: 10rem;
+	gap: 2rem;
 }
 
 .profil__left {
@@ -32,7 +31,7 @@
 
 @media screen and (max-width: 660px) {
 	.profil__main {
-		padding: 20% 1em;
+		padding: 7rem 1em;
 		gap: 0;
 		flex-direction: column;
 	}
