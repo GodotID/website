@@ -19,7 +19,7 @@ const Sidebar = ({ progress }) => {
 					<MoveDown />
 					<Mouse />
 				</div>
-				<div className="navbar__logoWrapper" style={{ fill: "var(--secondary-text)" }}>
+				<div className="navbar__logoWrapper" style={{ fill: "var(--secondary-text)", border: "inherit" }}>
 					<GodotIDLogo />
 				</div>
 			</div>

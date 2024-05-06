@@ -17,6 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: revert;
 }
 
+/* TODO: Add feedback */
 button {
 	border: 0;
 	padding: 0.4em 0.8em;
@@ -40,7 +41,7 @@ button {
 		rgba(205, 163, 13, 1) 100%
 	);
 
-	--border-soft: #f4f4f4;
+	--border-soft: #87bf8e;
 	--border-radius-second: 5px;
 }
 

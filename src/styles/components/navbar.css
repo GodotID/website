@@ -1,6 +1,7 @@
 .navbar__navbar {
 	width: 100%;
-	border: 1px solid var(--border-soft);
+    height: 60px;
+	border-bottom: 1px solid var(--border-soft);
 	border-left: none;
 
 	display: flex;
@@ -13,12 +14,12 @@
 }
 
 .navbar__logoWrapper {
-	min-width: 80px;
-	height: 80px;
+	min-width: 60px;
+	min-height: 60px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border-left: 1px solid var(--border-soft);
+	/* border-left: 1px solid var(--border-soft); */
 	border-right: 1px solid var(--border-soft);
 }
 
@@ -48,6 +49,11 @@
 	text-decoration: none;
 	padding: 0 1em;
 	height: 100%;
+}
+
+.navbar__linksWrapper > button {
+    /* TODO: Change most px units to rem or em; */
+    margin-left: 1rem;
 }
 
 .navbar__mobile {
