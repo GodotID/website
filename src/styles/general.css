@@ -41,8 +41,14 @@ button {
 		rgba(205, 163, 13, 1) 100%
 	);
 
-	--border-soft: #87bf8e;
+	--border-soft: #6dac78c0;
 	--border-radius-second: 5px;
+
+    --button-background: #ffffffc9;
+
+    --border-radius-1: 8px;
+    --border-radius-2: 5px;
+    --border-radius-3: 3px;
 }
 
 @media screen and (max-width: 660px) {

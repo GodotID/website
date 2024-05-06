@@ -3,6 +3,7 @@
     height: 60px;
 	border-bottom: 1px solid var(--border-soft);
 	border-left: none;
+    border-radius: var(--border-radius-2);
 
 	display: flex;
 	position: absolute;
@@ -20,7 +21,7 @@
 	align-items: center;
 	justify-content: center;
 	/* border-left: 1px solid var(--border-soft); */
-	border-right: 1px solid var(--border-soft);
+	/* border-right: 1px solid var(--border-soft); */
 }
 
 .navbar__logoWrapper > svg {
@@ -54,6 +55,7 @@
 .navbar__linksWrapper > button {
     /* TODO: Change most px units to rem or em; */
     margin-left: 1rem;
+    background: var(--button-background);
 }
 
 .navbar__mobile {
