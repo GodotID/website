@@ -1,6 +1,15 @@
 .visimisi__main {
-	padding: 15% 6em;
-	height: 100vh;
+	padding: 5rem 12rem;
+}
+
+.visimisi__main#misi {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.visimisi__main#misi > * {
+    width: 50%;
 }
 
 .visimisi__header {
@@ -18,6 +27,6 @@
 
 @media screen and (max-width: 660px) {
 	.visimisi__main {
-		padding: 20% 1em;
+		padding: 7rem 1em;
 	}
 }

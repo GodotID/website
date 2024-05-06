@@ -3,6 +3,7 @@ import { useState } from 'react';
 import 'styles/components/hero.css'
 import 'styles/components/visimisi.css'
 
+// TODO: Do not make it straightforward that we wanted to tell our vision and mission, use naratives
 const Hero = () => {
 	return (
 		<div id="visi" className="visimisi__main">
