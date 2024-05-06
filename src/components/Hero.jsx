@@ -6,12 +6,12 @@ const Hero = () => {
 	return (
 		<div className="hero__hero">
 			<h1 className="hero__headline">
-				Komunitas Developer Game<br/>
-				Engine Godot #1 di Indonesia
+				Komunitas Game Developer<br/>
+				Godot Engine #1 di Indonesia
 			</h1>
 			<p>
-				Bergabung bersama lebih dari 300 godotters dan<br/>
-				ikuti berbagai event menarik!
+				Bergabung bersama lebih dari 450 godotters dan<br/>
+				ikuti berbagai event bersama!
 			</p>
 			<p className="hero__disclaimer">
 				Godot Indonesia is <a href="https://godotengine.org/community/user-groups/">the unofficial national community</a> forum for Indonesia.<br/>
