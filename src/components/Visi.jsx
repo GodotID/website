@@ -5,7 +5,7 @@ import 'styles/components/visimisi.css'
 
 const Hero = () => {
 	return (
-		<div className="visimisi__main">
+		<div id="visi" className="visimisi__main">
 			<h2 className="visimisi__header">
 				Visi
 			</h2>

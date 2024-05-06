@@ -5,7 +5,7 @@ import godotidjpg from 'misc/imgs/godot_indonesia.jpg'
 
 const Profil = () => {
 	return (
-		<div className="profil__main">
+		<div id="profil" className="profil__main">
 			<div className="profil__left">
 				<h2 className="profil__header">
 					Profil Godot Indonesia

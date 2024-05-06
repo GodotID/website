@@ -25,7 +25,6 @@
     "lucide-react": "^0.252.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-page-scroll": "^1.0.6",
     "react-router-dom": "^6.21.2",
     "vite-plugin-svgr": "^3.2.0"
   },

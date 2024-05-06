@@ -4,7 +4,7 @@ import 'styles/components/hero.css'
 
 const Hero = () => {
 	return (
-		<div className="hero__hero">
+		<div id="hero" className="hero__hero">
 			<h1 className="hero__headline">
 				Komunitas Game Developer<br/>
 				Godot Engine #1 di Indonesia

@@ -1,5 +1,7 @@
 .sidebar__wrapper {
-	position: relative;
+	position: fixed;
+    top: 0;
+    left: 0;
 	display: flex;
 	flex-direction: column-reverse;
 	z-index: 2;
@@ -15,7 +17,6 @@
 	width: 100%;
 	background: var(--primary-text);
     border-radius: var(--border-radius-2);
-	transition: 1s;
 	overflow: hidden;
 	position: relative;
 }
