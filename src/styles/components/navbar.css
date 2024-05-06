@@ -28,6 +28,17 @@
 .navbar__logoWrapper > svg {
 	width: 2rem;
 	height: 2rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.navbar__logoWrapper > svg:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(var(--button-background) 0 0 8px);
+}
+
+.navbar__logoWrapper > svg:active {
+    transform: scale(0.9);
 }
 
 .navbar__spaceWrapper {

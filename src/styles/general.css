@@ -21,6 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: revert;
 }
 
+/* TODO: Use SASS */
 /* TODO: Add feedback */
 button {
 	border: 0;
@@ -29,6 +30,10 @@ button {
 	border-radius: var(--border-radius-second);
 	margin: 0;
 	cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--button-background-hover);
 }
 
 #root {
@@ -49,6 +54,7 @@ button {
 	--border-radius-second: 5px;
 
     --button-background: #ffffffc9;
+    --button-background-hover: #ffffff;
 
     --border-radius-1: 8px;
     --border-radius-2: 5px;
@@ -59,4 +65,13 @@ button {
 	html, body, #root {
 		overscroll-behavior: none;
 	}
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
