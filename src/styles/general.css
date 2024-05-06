@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 
 button {
 	border: 0;
-	padding: 0.4em 0.7em;
+	padding: 0.4em 0.8em;
 	font-weight: normal;
 	border-radius: var(--border-radius-second);
 	margin: 0;
@@ -44,7 +44,7 @@ button {
 	--border-radius-second: 5px;
 }
 
-@media screen and (max-width 660px) {
+@media screen and (max-width: 660px) {
 	html, body, #root {
 		overscroll-behavior: none;
 	}
