@@ -1,3 +1,27 @@
+#root {
+    --background: #218A2B;
+
+	--primary-text: #ffffff;
+	--primary-text2: #ffffff;
+	--secondary-text: #218A2B;
+    --dim-paragraph: #8a8a8a;
+	--primary-header-text: radial-gradient(
+		230.88% 96.39% at 19.17% 21.57%,
+		rgba(234, 193, 48, 1) 0,
+		rgba(205, 163, 13, 1) 100%
+	);
+
+	--border-soft: #6dac78c0;
+	--border-radius-second: 5px;
+
+    --button-background: #ffffffc9;
+    --button-background-hover: #ffffff;
+
+    --border-radius-1: 8px;
+    --border-radius-2: 5px;
+    --border-radius-3: 3px;
+}
+
 html, body, #root {
     height: 100%;
 }
@@ -34,31 +58,6 @@ button {
 
 button:hover {
     background-color: var(--button-background-hover);
-}
-
-#root {
-	height: 100%;
-
-
-	--primary-text: #ffffff;
-	--primary-text2: #ffffff;
-	--secondary-text: #218A2B;
-    --dim-paragraph: #8a8a8a;
-	--primary-header-text: radial-gradient(
-		230.88% 96.39% at 19.17% 21.57%,
-		rgba(234, 193, 48, 1) 0,
-		rgba(205, 163, 13, 1) 100%
-	);
-
-	--border-soft: #6dac78c0;
-	--border-radius-second: 5px;
-
-    --button-background: #ffffffc9;
-    --button-background-hover: #ffffff;
-
-    --border-radius-1: 8px;
-    --border-radius-2: 5px;
-    --border-radius-3: 3px;
 }
 
 @media screen and (max-width: 660px) {

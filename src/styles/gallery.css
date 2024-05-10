@@ -1,26 +1,5 @@
-.gallery__hero {
-    width: 100%;
-    background: var(--primary-text);
-    text-align: center;
-    padding-top: calc(10em + 82px); /* +navbar height */
-    padding-bottom: 8em;
-    border-bottom: 1px solid var(--border-soft);
-    box-shadow: 0 4px 10px 0 var(--border-soft);
-}
-
-.gallery__hero > h1 {
-    font-size: 48px;
-    background: var(--primary-header-text);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.gallery__hero > p {
-    color: var(--dim-paragraph);
-}
-
 .gallery__masonry {
-    padding: 0 2rem;
+    padding: 1rem 2rem;
     padding-top: 5rem;
     list-style: none;
     columns: 19rem;

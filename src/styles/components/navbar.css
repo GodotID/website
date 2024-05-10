@@ -14,7 +14,8 @@
 }
 
 .navbar__navbar.secondary {
-    --primary-text: var(--secondary-text);
+    background: #00470250;
+    /* --primary-text: var(--secondary-text); */
 }
 
 .navbar__logoWrapper {

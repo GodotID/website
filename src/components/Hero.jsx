@@ -14,7 +14,7 @@ const Hero = () => {
 				ikuti berbagai event bersama!
 			</p>
 			<p className="hero__disclaimer">
-				Godot Indonesia is <a href="https://godotengine.org/community/user-groups/">the unofficial national community</a> forum for Indonesia.<br/>
+				Godot Indonesia is <a href="https://godotengine.org/community/user-groups/">a recognized national community</a> for Godot enthusiasts in Indonesia.<br/>
 				Godot Engine is courtesy of <a href="https://godotengine.org">Godot Core Team</a>.
 			</p>
 		</div>

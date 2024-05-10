@@ -21,10 +21,6 @@ function Gallery() {
         <div className='gallery__gallery'>
             <NavBar color='secondary'/>
             <div className='gallery__content'>
-                <div className='gallery__hero'>
-                    <h1>Galeri Komunitas</h1>
-                    <p>Karya, kegiatan, dan penghargaan</p>
-                </div>
                 <ul className='gallery__masonry'>
                     {/* TODO: dynamic content loading, maybe we need server */}
                     <GalleryItem imgsrc={'https://picsum.photos/600/400'} title={'My Game'} desc={'A very great game with many developmental breakthrough'} />
