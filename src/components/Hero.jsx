@@ -10,7 +10,7 @@ const Hero = () => {
 				Godot Engine #1 di Indonesia
 			</h1>
 			<p>
-				Bergabung bersama lebih dari 450 godotters dan<br/>
+				Bergabung bersama lebih dari 500 godotters dan<br/>
 				ikuti berbagai event bersama!
 			</p>
 			<p className="hero__disclaimer">
