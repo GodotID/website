@@ -3,7 +3,7 @@ import 'styles/components/stats.css'
 const STATS = [
 	{ value: '698', label: 'Anggota Telegram' },
 	{ value: '290', label: 'Anggota Discord' },
-	{ value: '2021', label: 'Berdiri sejak Maret' },
+	{ value: 'Maret 2021', label: 'Berdiri sejak' },
 	{ value: '4', label: 'Game jam terselenggara' },
 ];
 
@@ -17,8 +17,7 @@ const Stats = () => {
 				</div>
 			))}
 			<p className="stats__caption">
-				Angka di atas tercatat pada saat penulisan, dan diperbarui seiring
-				pertumbuhan komunitas.
+				Diperbarui seiring pertumbuhan komunitas.
 			</p>
 		</section>
 	);

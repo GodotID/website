@@ -30,7 +30,6 @@
 	font-size: var(--step--1);
 	line-height: var(--leading-body);
 	letter-spacing: 0.04em;
-	text-transform: uppercase;
 }
 
 .stats__caption {

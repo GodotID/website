@@ -65,7 +65,7 @@ const Footer = () => {
 			</div>
 
 			<div className="footer__bottom">
-				<span>&copy; {year} Godot Indonesia</span>
+				<span></span>
 				<a
 					href="https://github.com/GodotID/website/blob/master/CONTRIBUTING.md"
 					target="_blank"
