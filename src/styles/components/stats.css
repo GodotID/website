@@ -1,0 +1,60 @@
+.stats__main {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 2.5rem 4rem;
+	text-align: center;
+
+	padding: 3rem 12rem;
+
+	color: var(--primary-text);
+}
+
+.stats__item {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+}
+
+.stats__value {
+	color: var(--primary-header-solid);
+
+	font-family: 'Philosopher', 'Lexend', Georgia, serif;
+	font-size: var(--step-4);
+	font-weight: 700;
+	line-height: var(--leading-heading);
+}
+
+.stats__label {
+	font-size: var(--step--1);
+	line-height: var(--leading-body);
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+
+.stats__caption {
+	margin: 0;
+	width: 100%;
+
+	font-size: var(--step--1);
+	line-height: var(--leading-body);
+	color: #e8f5e9;
+}
+
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+	.stats__value {
+		background-image: var(--primary-header-text);
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		color: transparent;
+	}
+}
+
+@media screen and (max-width: 660px) {
+	.stats__main {
+		gap: 1.5rem 2.5rem;
+		padding: 3rem 1em;
+	}
+}
