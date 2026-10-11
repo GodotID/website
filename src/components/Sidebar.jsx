@@ -5,7 +5,7 @@ import { Mouse, MoveDown } from 'lucide-react';
 import 'styles/components/sidebar.css'
 import 'styles/components/navbar.css'
 
-import { ReactComponent as GodotIDLogo } from 'misc/imgs/logo.svg'
+import GodotIDLogo from 'misc/imgs/logo.svg?react'
 
 const Sidebar = ({ progress }) => {
 	return (

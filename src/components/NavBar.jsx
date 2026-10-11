@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import 'styles/components/navbar.css'
 
-import { ReactComponent as GodotIDLogo } from 'misc/imgs/logo.svg'
+import GodotIDLogo from 'misc/imgs/logo.svg?react'
 import { Menu, X } from 'lucide-react';
 
 const NavBar = ({ color }) => {
