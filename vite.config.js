@@ -11,9 +11,9 @@ export default defineConfig({
 	plugins: [react(), generouted(), svgr()],
 	resolve: {
 		alias: {
-			components: join(__dirname, 'src', 'components'),
-			misc: join(__dirname, 'src', 'misc'),
-			styles: join(__dirname, 'src', 'styles')
+			components: join(import.meta.dirname, 'src', 'components'),
+			misc: join(import.meta.dirname, 'src', 'misc'),
+			styles: join(import.meta.dirname, 'src', 'styles')
 		}
 	},
 	build: {
