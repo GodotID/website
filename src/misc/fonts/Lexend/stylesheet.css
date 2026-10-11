@@ -57,7 +57,7 @@
 @font-face {
     font-family: 'Lexend';
     src: url('Lexend-ExtraBold.woff2') format('woff2');
-    font-weight: bold;
+    font-weight: 800;
     font-style: normal;
     font-display: swap;
 }

@@ -2,14 +2,13 @@
     --background: #218A2B;
 
 	--primary-text: #ffffff;
-	--primary-text2: #ffffff;
 	--secondary-text: #218A2B;
-    --dim-paragraph: #8a8a8a;
 	--primary-header-text: radial-gradient(
 		230.88% 96.39% at 19.17% 21.57%,
 		rgba(234, 193, 48, 1) 0,
 		rgba(205, 163, 13, 1) 100%
 	);
+	--primary-header-solid: #d8a815;
 
 	--border-soft: #6dac78c0;
 	--border-radius-second: 5px;
@@ -17,9 +16,21 @@
     --button-background: #ffffffc9;
     --button-background-hover: #ffffff;
 
-    --border-radius-1: 8px;
     --border-radius-2: 5px;
-    --border-radius-3: 3px;
+
+	/* Type scale, 1.25 ratio */
+	--step--1: 0.875rem;
+	--step-0: 1rem;
+	--step-1: 1.25rem;
+	--step-2: 1.563rem;
+	--step-3: 1.953rem;
+	--step-4: 2.441rem;
+	--step-5: 3.052rem;
+
+	/* Leading scale */
+	--leading-display: 1.05;
+	--leading-heading: 1.15;
+	--leading-body: 1.55;
 }
 
 html, body, #root {
@@ -29,20 +40,32 @@ html, body, #root {
 body {
 	margin: 0;
 	min-height: 100vh;
-	text-rendering: optimizeLegibility;
 }
 
 body * {
 	outline: 0;
 	box-sizing: border-box;
 	
-	font-family: Lexend;
-	font-size: 1em;
+	font-family: 'Lexend', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: Philosopher;
-	font-size: revert;
+	font-family: 'Philosopher', 'Lexend', Georgia, serif;
+	line-height: var(--leading-heading);
+	text-wrap: balance;
+}
+
+h1 { font-size: var(--step-5); }
+h2 { font-size: var(--step-4); }
+h3 { font-size: var(--step-2); }
+h4, h5, h6 { font-size: var(--step-1); }
+
+p {
+	text-wrap: pretty;
+}
+
+.br-desktop {
+	display: inline;
 }
 
 /* TODO: Use SASS */
@@ -63,6 +86,10 @@ button:hover {
 @media screen and (max-width: 660px) {
 	html, body, #root {
 		overscroll-behavior: none;
+	}
+
+	.br-desktop {
+		display: none;
 	}
 }
 

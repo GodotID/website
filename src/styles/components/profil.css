@@ -11,7 +11,8 @@
 .profil__header {
 	background-image: var(--primary-header-text);
 	font-weight: 700;
-	font-size: 3rem;
+	font-size: var(--step-4);
+	line-height: var(--leading-heading);
 	margin: 0;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -19,13 +20,17 @@
 
 .profil__text {
 	color: var(--primary-text);
+	max-width: 65ch;
+	line-height: var(--leading-body);
 }
 
-.profil_right {
+.profil__right {
 	flex: 1;
 }
 
 .profil__right__image {
+	max-width: 100%;
+	height: auto;
 	border-radius: var(--border-radius-second);
 }
 

@@ -15,7 +15,8 @@
 .visimisi__header {
 	background-image: var(--primary-header-text);
 	font-weight: 700;
-	font-size: 10rem;
+	font-size: clamp(4rem, 13vw, 10rem);
+	line-height: var(--leading-display);
 	margin: 0;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -23,6 +24,8 @@
 
 .visimisi__text {
 	color: var(--primary-text);
+	max-width: 60ch;
+	line-height: var(--leading-body);
 }
 
 @media screen and (max-width: 660px) {
