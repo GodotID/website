@@ -135,3 +135,6 @@ dist
 
 # Prevent my necovim config being pusing to github
 .necovim/
+
+
+.pi/
