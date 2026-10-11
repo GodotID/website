@@ -6,8 +6,7 @@ import NavBar from 'components/NavBar'
 import Sidebar from 'components/Sidebar'
 import Hero from 'components/Hero'
 import Stats from 'components/Stats'
-import Visi from 'components/Visi'
-import Misi from 'components/Misi'
+import VisiMisi from 'components/VisiMisi'
 import Profil from 'components/Profil'
 import Faq from 'components/Faq'
 import Footer from 'components/Footer'
@@ -76,8 +75,7 @@ const Homepage = () => {
 				<div className="homepage__main">
 					<Hero />
 					<Stats />
-					<Visi />
-					<Misi />
+					<VisiMisi />
 					<Profil />
 					<Faq />
 				</div>

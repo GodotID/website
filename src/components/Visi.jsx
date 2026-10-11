@@ -1,11 +1,10 @@
-import { useState } from 'react';
+import { memo } from 'react';
 
-import 'styles/components/hero.css'
 import 'styles/components/visimisi.css'
 
-const Hero = () => {
+const Visi = () => {
 	return (
-		<div id="visi" className="visimisi__main">
+		<>
 			<h2 className="visimisi__header">
 				Visi
 			</h2>
@@ -24,8 +23,8 @@ const Hero = () => {
 				muda Indonesia,<br className="br-desktop" />
 				khususnya lewat perangkat lunak Godot Engine.
 			</p>
-		</div>
+		</>
 	);
 };
 
-export default Hero;
+export default memo(Visi);

@@ -1,24 +1,93 @@
-.visimisi__main {
-	padding: 5rem 12rem;
+.visimisi__track {
+	position: relative;
+
+	/* How much scroll distance the whole sequence consumes. The track is one
+	   viewport taller than the travel, because the sticky stage already covers
+	   the first viewport of it. */
+	--vm-travel: 300vh;
+
+	/* Timeline, as a fraction of the travel:
+	   0.00 - 0.25  Visi holds still, the page looks locked
+	   0.25 - 0.37  the two layers cross over
+	   0.42 - 0.90  the mission points light up one after another
+	   0.90 - 1.00  everything holds, then the track releases */
+	--vm-fade-start: 0.25;
+	--vm-fade-window: 0.12;
+
+	/* Written by the component on every animation frame. */
+	--vm-p: 0;
+	--vm-fade: clamp(0, calc((var(--vm-p) - var(--vm-fade-start)) / var(--vm-fade-window)), 1);
+
+	height: calc(var(--vm-travel) + 100vh);
 }
 
-.visimisi__main#misi {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
+.visimisi__stage {
+	position: sticky;
+	top: 0;
+	height: 100vh;
+
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas: "layer";
 }
 
-.visimisi__main#misi > * {
-    width: 50%;
+/* Hash targets. They are out of flow on the pinned layout, so they never
+   disturb the stage, but they still carry the scroll position that index.jsx
+   jumps to. */
+.visimisi__anchor {
+	position: absolute;
+	left: 0;
+	width: 1px;
+	height: 1px;
+	pointer-events: none;
+}
+
+.visimisi__anchor--visi {
+	top: 0;
+}
+
+/* Land where the crossfade has just finished, so the whole Misi list is already
+   on screen and only the highlight is left to play. */
+.visimisi__anchor--misi {
+	top: calc(0.37 * var(--vm-travel));
+}
+
+.visimisi__layer {
+	grid-area: layer;
+	min-height: 0;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 3rem clamp(2rem, 12vw, 12rem);
+
+	will-change: opacity, transform;
+}
+
+.visimisi__layer--visi {
+	opacity: calc(1 - var(--vm-fade));
+	transform: translateY(calc(var(--vm-fade) * -3rem));
+}
+
+.visimisi__layer--misi {
+	align-items: end;
+	opacity: var(--vm-fade);
+	transform: translateY(calc((1 - var(--vm-fade)) * 3rem));
+}
+
+.visimisi__layer--misi > * {
+	width: 50%;
 }
 
 .visimisi__header {
 	background-image: var(--primary-header-text);
 	font-weight: 700;
-	font-size: clamp(4rem, 13vw, 10rem);
+	font-size: clamp(3rem, 6vw, 5.5rem);
 	line-height: var(--leading-display);
-	margin: 0;
+	margin: 0 0 1.5rem;
 	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
@@ -26,18 +95,127 @@
 	color: var(--primary-text);
 	max-width: 60ch;
 	line-height: var(--leading-body);
+	margin: 0;
+}
+
+.visimisi__text + .visimisi__text {
+	margin-top: 1rem;
+}
+
+.visimisi__list {
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.visimisi__item {
+	/* Each point owns its slice of the timeline and lights up on its own. The
+	   start is set per item by the component. */
+	--vm-item-start: 0;
+	--vm-item-span: 0.06;
+	--vm-item-p: clamp(0, calc((var(--vm-p) - var(--vm-item-start)) / var(--vm-item-span)), 1);
+
+	position: relative;
+	padding-left: 1.5rem;
+
+	opacity: calc(0.28 + 0.72 * var(--vm-item-p));
+	transform: translateX(calc((1 - var(--vm-item-p)) * 0.75rem));
+	will-change: opacity, transform;
+}
+
+.visimisi__item::before {
+	content: '';
+	position: absolute;
+	inset: 0.2em auto 0.2em 0;
+	width: 3px;
+	border-radius: 999px;
+	background: var(--primary-header-solid);
+
+	opacity: var(--vm-item-p);
+	transform: scaleY(var(--vm-item-p));
+	transform-origin: top center;
+}
+
+.visimisi__itemTitle {
+	display: block;
+	color: var(--primary-text);
+	font-weight: 600;
+	line-height: var(--leading-heading);
+}
+
+.visimisi__itemText {
+	color: var(--primary-text);
+	font-size: var(--step--1);
+	line-height: var(--leading-body);
+	margin: 0.25rem 0 0;
+}
+
+/* Shorter viewports cannot fit the whole Misi list at the display size, so the
+   pinned stage tightens up instead of clipping the last points. */
+@media screen and (min-width: 661px) and (max-height: 820px) {
+	.visimisi__layer {
+		padding: 2rem clamp(2rem, 10vw, 10rem);
+	}
+
+	.visimisi__header {
+		font-size: clamp(2.5rem, 4.5vw, 3.75rem);
+		margin-bottom: 1rem;
+	}
+
+	.visimisi__list {
+		gap: 0.75rem;
+	}
+
+	.visimisi__itemText {
+		font-size: 0.8125rem;
+	}
+}
+
+/* Below the breakpoint, and whenever motion is unwelcome, the pin is dropped
+   and both sections simply stack in the normal flow. */
+@media screen and (max-width: 660px), (prefers-reduced-motion: reduce) {
+	.visimisi__track {
+		height: auto;
+	}
+
+	.visimisi__stage {
+		position: static;
+		height: auto;
+		display: block;
+	}
+
+	.visimisi__anchor {
+		position: static;
+		display: block;
+	}
+
+	.visimisi__layer {
+		padding: 7rem clamp(2rem, 12vw, 12rem);
+		opacity: 1;
+		transform: none;
+		will-change: auto;
+	}
+
+	.visimisi__header {
+		font-size: clamp(4rem, 13vw, 10rem);
+	}
+
+	.visimisi__item {
+		--vm-item-p: 1;
+		will-change: auto;
+	}
 }
 
 @media screen and (max-width: 660px) {
-	.visimisi__main {
+	.visimisi__layer {
 		padding: 7rem 1em;
 	}
 
-    .visimisi__main#misi {
-        display: block;
-    }
-
-    .visimisi__main#misi > * {
-        width: 100%;
-    }
+	.visimisi__layer--misi > * {
+		width: 100%;
+	}
 }
