@@ -1,17 +1,49 @@
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 
 import 'styles/gallery.css'
 
 import NavBar from 'components/NavBar'
+import Footer from 'components/Footer'
 
-function GalleryItem({ imgsrc, title, desc }) {
+import items from 'misc/gallery.generated.json'
+
+function GalleryItem({ item }) {
+    const [src, setSrc] = useState(item.img || item.imgFallback);
+
+    function handleImageError() {
+        if (item.imgFallback && src !== item.imgFallback) {
+            setSrc(item.imgFallback);
+        }
+    }
+
     return (
         <li className='gallery__item'>
-            <img src={imgsrc}></img>
-            <div className='gallery__item__overlay'>
-                <b>{title}</b>
-                <p>{desc}</p>
-            </div>
+            <a
+                className='gallery__item__link'
+                href={item.url}
+                target='_blank'
+                rel='noopener noreferrer'
+            >
+                {src
+                    ? <img
+                        className='gallery__item__image'
+                        src={src}
+                        alt={`Karya ${item.title} oleh ${item.author}`}
+                        loading='lazy'
+                        width={item.width || undefined}
+                        height={item.height || undefined}
+                        onError={handleImageError}
+                    />
+                    : <span className='gallery__item__placeholder'>{item.title}</span>
+                }
+                <span className='gallery__item__overlay'>
+                    <b>{item.title}</b>
+                    {item.desc ? <p>{item.desc}</p> : null}
+                    <span className='gallery__item__meta'>
+                        {item.author} &middot; {item.jam}
+                    </span>
+                </span>
+            </a>
         </li>
     );
 }
@@ -21,19 +53,18 @@ function Gallery() {
         <div className='gallery__gallery'>
             <NavBar color='secondary'/>
             <div className='gallery__content'>
-                <ul className='gallery__masonry'>
-                    {/* TODO: dynamic content loading, maybe we need server */}
-                    <GalleryItem imgsrc={'https://picsum.photos/600/400'} title={'My Game'} desc={'A very great game with many developmental breakthrough'} />
-                    <GalleryItem imgsrc={'https://picsum.photos/800/400'} title={'My Game'} desc={'A very great game with many developmental breakthrough'} />
-                    <GalleryItem imgsrc={'https://picsum.photos/600/600'} title={'My Game'} desc={'A very great game with many developmental breakthrough'} />
-                    <GalleryItem imgsrc={'https://picsum.photos/700/400'} title={'My Game'} desc={'A very great game with many developmental breakthrough'} />
-                    <GalleryItem imgsrc={'https://picsum.photos/400/600'} title={'My Game'} desc={'A very great game with many developmental breakthrough'} />
-                    <GalleryItem imgsrc={'https://picsum.photos/500/600'} title={'My Game'} desc={'A very great game with many developmental breakthrough'} />
-                    <GalleryItem imgsrc={'https://picsum.photos/800/600'} title={'My Game'} desc={'A very great game with many developmental breakthrough'} />
-                    <GalleryItem imgsrc={'https://picsum.photos/900/600'} title={'My Game'} desc={'A very great game with many developmental breakthrough'} />
-                    <GalleryItem imgsrc={'https://picsum.photos/800/680'} title={'My Game'} desc={'A very great game with many developmental breakthrough'} />
-                </ul>
+                {items.length === 0
+                    ? <p className='gallery__empty'>
+                        Belum ada karya yang bisa ditampilkan di sini.
+                    </p>
+                    : <ul className='gallery__masonry'>
+                        {items.map((item) => (
+                            <GalleryItem item={item} key={item.url} />
+                        ))}
+                    </ul>
+                }
             </div>
+            <Footer />
         </div>
     );
 }

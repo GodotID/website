@@ -20,6 +20,9 @@ jobs:
           node-version: 22
           cache: pnpm
       - run: pnpm install --frozen-lockfile
+      - name: Fetch gallery data
+        continue-on-error: true
+        run: node scripts/fetch-gallery.mjs
       - run: pnpm build
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v5

@@ -92,6 +92,10 @@ out
 .nuxt
 dist
 
+# Gallery covers, downloaded by scripts/fetch-gallery.mjs at build time.
+# The committed dataset lives at src/misc/gallery.generated.json instead.
+public/gallery/
+
 # Gatsby files
 .cache/
 # Comment in the public line in if your project uses Gatsby and not Next.js

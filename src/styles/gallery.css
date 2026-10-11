@@ -1,3 +1,19 @@
+.gallery__gallery {
+    min-height: 100vh;
+    background: var(--background);
+}
+
+.gallery__content {
+    width: 100%;
+}
+
+.gallery__empty {
+    padding: 8rem 2rem;
+    text-align: center;
+    color: var(--primary-text);
+    line-height: var(--leading-body);
+}
+
 .gallery__masonry {
     padding: 1rem 2rem;
     padding-top: 5rem;
@@ -11,18 +27,37 @@
     margin: 0 0 1rem;
 }
 
-.gallery__masonry img {
-    display: block;
-    height: auto;
-    max-width: 100%;
-}
-
 .gallery__item {
     position: relative;
     overflow: clip;
 }
 
+.gallery__item__link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.gallery__item__image {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.gallery__item__placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 4 / 3;
+    padding: 1rem;
+    text-align: center;
+    color: var(--primary-text);
+    background: #00470250;
+    line-height: var(--leading-body);
+}
+
 .gallery__item__overlay {
+    display: block;
     opacity: 0;
     padding: 1rem;
     transform: translateY(100%);
@@ -35,16 +70,41 @@
     transition: 0.8s;
 }
 
-.gallery__item:hover .gallery__item__overlay {
+.gallery__item:hover .gallery__item__overlay,
+.gallery__item__link:focus-visible .gallery__item__overlay {
     opacity: 1;
     transform: translateY(0%);
 }
 
 .gallery__item__overlay b {
-    font-size: 24px;
+    display: block;
+    font-size: var(--step-1);
+    line-height: var(--leading-heading);
 }
 
 .gallery__item__overlay p {
-    margin: 0;
+    margin: 0.5rem 0 0;
+    line-height: var(--leading-body);
+}
+
+.gallery__item__meta {
+    display: block;
     margin-top: 0.5rem;
+    font-size: var(--step--1);
+    line-height: var(--leading-body);
+    color: #e8f5e9;
+}
+
+/* Touch devices never fire hover, so the caption stays visible there. */
+@media (hover: none) {
+    .gallery__item__overlay {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .gallery__masonry {
+        padding: 5rem 1rem 1rem;
+    }
 }
