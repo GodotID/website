@@ -7,15 +7,15 @@ const FAQ_ITEMS = [
 	},
 	{
 		question: 'Perlu bisa coding dulu untuk gabung?',
-		answer: 'Tidak perlu. Kami semua di sini memulai dari titik yang berbeda-beda dan tumbuh bersama-sama, jadi kamu bisa langsung bergabung lalu menemukan caranya sambil berjalan.',
+		answer: 'Pengalaman coding bukan syarat untuk bergabung. Kami semua di sini memulai dari titik yang berbeda-beda dan tumbuh bersama-sama, jadi kamu bisa langsung masuk lalu menemukan caranya sambil berjalan.',
 	},
 	{
 		question: 'Apakah komunitas ini berbayar?',
-		answer: 'Tidak. Komunitas ini terbuka untuk siapa saja dan bisa diikuti tanpa biaya, karena tujuannya memang membuka akses belajar seluas mungkin.',
+		answer: 'Komunitas ini gratis dan terbuka untuk siapa saja, karena tujuannya memang membuka akses belajar seluas mungkin.',
 	},
 	{
 		question: 'Ada syarat usia?',
-		answer: 'Tidak ada. Usia berapa pun boleh memakai Godot Engine dan ikut bergabung, karena yang menentukan seberapa jauh seseorang melangkah adalah kemauan untuk mencoba.',
+		answer: 'Usia berapa pun boleh memakai Godot Engine dan ikut bergabung, karena yang menentukan seberapa jauh seseorang melangkah adalah kemauan untuk mencoba.',
 	},
 	{
 		question: 'Apakah boleh ikut kalau masih pemula?',
